@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Cliente] — [proposta de valor em 1 linha]</title>
+  <meta name="description" content="[descrição curta para o Google — o que é e pra quem]" />
+  <style>
+    :root{
+      --primaria:#1a73e8; --secundaria:#0b5394; --texto:#1d1d1f;
+      --claro:#f7f7f9; --branco:#fff; --max:1080px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--texto);line-height:1.5}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    .btn{display:inline-block;background:var(--primaria);color:#fff;text-decoration:none;
+      padding:14px 28px;border-radius:10px;font-weight:700;font-size:1.05rem}
+    section{padding:64px 0}
+
+    /* HERO */
+    .hero{background:var(--claro);text-align:center}
+    .hero h1{font-size:2.2rem;max-width:18ch;margin:0 auto 16px}
+    .hero p{font-size:1.15rem;max-width:46ch;margin:0 auto 28px;color:#444}
+
+    /* PROVA SOCIAL */
+    .prova{background:#fff;text-align:center}
+    .prova .itens{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;margin-top:28px}
+    .prova blockquote{background:var(--claro);padding:20px;border-radius:12px;max-width:300px;text-align:left}
+
+    /* BENEFÍCIOS */
+    .beneficios .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:28px}
+    .card{background:var(--claro);padding:24px;border-radius:12px}
+
+    /* OFERTA / CTA */
+    .oferta{background:var(--secundaria);color:#fff;text-align:center}
+    .oferta .btn{background:#fff;color:var(--secundaria)}
+
+    /* WHATSAPP FLUTUANTE */
+    .wpp{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;
+      padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+
+    h2{font-size:1.7rem;text-align:center}
+    @media(min-width:720px){ .hero h1{font-size:3rem} }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>[Headline: o que é + pra quem + benefício principal]</h1>
+      <p>[Subheadline: reforça o valor e fala da dor da persona.]</p>
+      <a class="btn" href="#oferta">[CTA principal — ex.: Quero começar]</a>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL -->
+  <section class="prova">
+    <div class="wrap">
+      <h2>Quem já confia</h2>
+      <div class="itens">
+        <blockquote>"[Depoimento real do cliente.]"<br><strong>— [Nome]</strong></blockquote>
+        <blockquote>"[Outro depoimento.]"<br><strong>— [Nome]</strong></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="beneficios">
+    <div class="wrap">
+      <h2>O que muda pra você</h2>
+      <div class="grid">
+        <div class="card"><h3>[Benefício 1]</h3><p>[O "depois", não a feature.]</p></div>
+        <div class="card"><h3>[Benefício 2]</h3><p>[...]</p></div>
+        <div class="card"><h3>[Benefício 3]</h3><p>[...]</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA / CTA FINAL -->
+  <section class="oferta" id="oferta">
+    <div class="wrap">
+      <h2>[Chamada da oferta]</h2>
+      <p>[O que inclui e por que vale — puxado do Vendedor.]</p>
+      <p style="margin:24px 0"><a class="btn" href="https://wa.me/55XXXXXXXXXXX" target="_blank">[CTA — ex.: Falar no WhatsApp]</a></p>
+    </div>
+  </section>
+
+  <!-- WHATSAPP FLUTUANTE -->
+  <a class="wpp" href="https://wa.me/55XXXXXXXXXXX" target="_blank">WhatsApp</a>
+
+</body>
+</html>

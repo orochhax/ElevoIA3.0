@@ -1,0 +1,26 @@
+# Sistema operacional
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Python (scripts das skills)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Editores / IDEs
+.vscode/
+.idea/
+
+# Segredos e variáveis de ambiente
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+
+# Logs e temporários
+*.log
+*.tmp
