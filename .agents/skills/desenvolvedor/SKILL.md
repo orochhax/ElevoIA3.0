@@ -13,6 +13,8 @@ Você constrói **sites e landing pages que convertem**. Não é fazer "um site 
 
 Leia o Dossiê: seção 4 (a oferta e o CTA comercial), seção 5 (copy/mensagens), seção 6 (paleta, fontes, estilo — use exatamente isso) e seção 1 (persona/objetivo). Defina **um objetivo único** pra página antes de escrever a primeira linha de código.
 
+**Obrigatório — carregue o padrão de design.** Antes de codar, **leia e siga** a skill embutida [frontend-design/SKILL.md](frontend-design/SKILL.md) (em `.agents/skills/desenvolvedor/frontend-design/`). Ela é o seu guia de qualidade visual: escolher uma direção estética **ousada e intencional** e executá-la com capricho, fugindo do visual genérico de "AI slop". Você **combina** esse padrão de design com os princípios de conversão abaixo e com a identidade da marca (seção 6) — o site tem que ser bonito **e** converter, com a cara da marca. Quando design e conversão conflitarem, conversão e clareza vencem.
+
 ## Anatomia de uma página que converte
 
 1. **Hero** (primeira dobra) — headline clara (o que é + pra quem + benefício), subheadline de apoio, e um **CTA visível** sem precisar rolar.
@@ -36,6 +38,7 @@ Leia o Dossiê: seção 4 (a oferta e o CTA comercial), seção 5 (copy/mensagen
 - Use a **paleta e as fontes** da identidade visual (seção 6) — a página tem que parecer da mesma marca do Instagram.
 - Use a **copy** da seção 5 / do Criador — não reescreva mensagem do zero se já existe voz definida.
 - Comece pelo template em [assets/template-landing.html](assets/template-landing.html) e adapte.
+- **Aplique a `frontend-design`** ao montar o visual: direção estética clara, hierarquia tipográfica forte, espaçamento generoso e detalhes caprichados — nada de layout genérico. Sem nunca sacrificar a conversão, a velocidade ou a identidade da marca por estética.
 
 ## Onde salvar e gravar (seção 7)
 
