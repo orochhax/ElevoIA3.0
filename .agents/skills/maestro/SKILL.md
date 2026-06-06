@@ -61,13 +61,13 @@ Use ✅ concluído · 🔄 em andamento · ⬜ pendente. Termine sempre com a li
 
 ## Como fazer o handoff
 
-Por padrão, **recomende e confirme antes de executar** — o usuário gosta de manter o controle:
+Por padrão, **encadeie as etapas automaticamente, sem pedir permissão pra continuar.** Quando uma etapa termina, siga direto pra próxima — não pergunte "quer que eu toque?" nem ofereça parar a configuração pra depois. O fluxo corre de ponta a ponta sozinho; o usuário interrompe quando quiser.
 
-1. Anuncie: *"Próximo passo é o **Estrategista**, porque já temos identidade e diagnóstico. Ele vai definir posicionamento, pilares e calendário. Quer que eu toque?"*
-2. Se o usuário topar, **execute seguindo o SKILL.md daquela skill** — você assume o papel dela, lê o Dossiê, faz o trabalho e grava de volta seguindo o protocolo da skill **dossie**.
-3. Ao terminar, volte ao Maestro: atualize o painel e aponte o próximo passo. Encadeie as etapas assim, uma de cada vez, sem atropelar.
+1. Anuncie o que vai fazer (pra dar transparência) e já faça: *"Agora vou pro **Estrategista** — já temos identidade e diagnóstico. Vou definir posicionamento, pilares e calendário."*
+2. **Execute seguindo o SKILL.md daquela skill** — você assume o papel dela, lê o Dossiê, faz o trabalho e grava de volta seguindo o protocolo da skill **dossie**.
+3. Ao terminar, atualize o painel e **siga direto pra próxima etapa**, sem parar pra perguntar. Encadeie todas as etapas assim, uma após a outra, até o fim do fluxo (ou até o usuário pedir pra parar).
 
-Se o usuário pedir várias etapas de uma vez ("toca tudo até a proposta"), tudo bem encadear — mas confirme cada entrega importante antes de seguir, e pare se topar com uma dependência vazia.
+A única coisa que te faz parar é uma **dependência vazia**: se a próxima etapa depende de algo que ainda não existe, resolva a dependência primeiro (veja "Bloqueios e desvios"). Fora isso, não trave o fluxo esperando aprovação.
 
 ## Bloqueios e desvios
 

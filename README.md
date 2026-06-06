@@ -1,5 +1,3 @@
-<!-- Renomeie "Agência-OS" pelo nome do seu produto, e troque SEU-USUARIO/SEU-REPO pela URL real do GitHub. -->
-
 # 🎯 Agência-OS
 
 **Uma agência de marketing inteira, em skills de IA — do briefing à proposta, do conteúdo ao site.**
@@ -71,12 +69,13 @@ O **Maestro** sempre sabe o próximo passo. O **Dossiê** guarda o contexto entr
 
 ### 1) Clone e abra o projeto do novo cliente
 ```bash
-git clone https://github.com/SEU-USUARIO/SEU-REPO.git cliente-novo
+git clone https://github.com/orochhax/ElevoIA3.0.git cliente-novo
 cd cliente-novo
 claude
 ```
+> `cliente-novo` é só o nome da pasta — troque pelo nome do cliente (regra: **1 pasta = 1 cliente**). O `cd` entra nela porque o `claude` precisa rodar **de dentro** do projeto.
 
-### 2) Inicie a descoberta
+### 2) Inicie a descoberta (o resto corre sozinho)
 Dentro do Claude Code, digite:
 ```
 /entrevistador
@@ -86,14 +85,9 @@ Dentro do Claude Code, digite:
 > claude "/entrevistador"
 > ```
 
-O **Entrevistador** começa a fazer as perguntas, monta o `dossie.md` e prepara o terreno pro resto do time.
+O **Entrevistador** faz as perguntas e monta o `dossie.md`. Quando a entrevista fecha, **o time segue sozinho** pelas etapas seguintes — Análise → Estratégia → Proposta → Conteúdo → Design → Site → Financeiro — parando só quando precisa de uma informação sua. Você pode interromper quando quiser.
 
-### 3) Siga o fluxo
-A qualquer momento, chame o maestro pra saber o que fazer em seguida:
-```
-/maestro
-```
-Ele mostra um painel do que já foi feito e qual é o próximo passo.
+> 💡 A qualquer momento, digite `/maestro` pra ver um **painel de status**: o que já foi feito e qual é o próximo passo.
 
 ---
 
@@ -115,9 +109,3 @@ Ele mostra um painel do que já foi feito e qual é o próximo passo.
 ## ⚠️ Sobre o financeiro
 
 O **Contador** organiza os números e te dá o panorama (entradas, saídas, margem, lucro), mas **declarações fiscais oficiais precisam de um contador humano**, que assina e responde legalmente. A ferramenta prepara; o profissional valida.
-
----
-
-## 🛠️ Personalizar
-
-As skills são arquivos de texto em `.agents/skills/<skill>/SKILL.md` — dá pra ler e ajustar o jeito de cada uma trabalhar (tom, perguntas, formatos) sem programar nada.

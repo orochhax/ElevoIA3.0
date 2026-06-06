@@ -103,7 +103,7 @@ Quando cobriu o essencial (não precisa esgotar tudo — precisa do utilizável)
 2. **Grave na seção 1 (Identidade)** do `dossie.md`, e preencha o `contato:` e o `canais:` (`usa` / `quer_usar`) no frontmatter. Siga o protocolo de atualização da skill **dossie**: edite só sua seção, não reescreva o resto.
 3. **Atualize o frontmatter:** `etapas.entrevista: concluido` (ou `em_andamento` se ficou algo pendente), `status_geral` para `onboarding` se ainda estava em `prospeccao`, e `atualizado_em` pra hoje.
 4. **Logue no Histórico:** `- [AAAA-MM-DD] Entrevista de descoberta concluída — identidade preenchida (Entrevistador)`.
-5. **Mostre o resumo pro usuário** e pergunte se algo ficou torto antes de considerar a etapa fechada.
+5. **Mostre o resumo pro usuário** pra ele ajustar o que estiver torto — mas **não pare aqui esperando "pode continuar"**. Com a Identidade fechada, **siga direto pro próximo passo do fluxo**: assuma o **Maestro**, releia o Dossiê e toque a próxima etapa (o Analista), encadeando o resto automaticamente até o fim do fluxo (ou até o usuário pedir pra parar).
 
 ## Critério de qualidade (quando está "pronto")
 
