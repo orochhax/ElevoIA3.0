@@ -36,12 +36,16 @@ Você não precisa ser especialista em marketing: o time te conduz, faz as pergu
 | Skill | O que faz |
 |---|---|
 | 🎼 **Maestro** | Orquestra o time: lê o Dossiê, mostra em que pé está o cliente e chama a skill certa na ordem certa. |
+| 🗂️ **Gestor de Projetos** | A operação: SOPs, briefings, gestão de entregas (prazos/aprovação) e onboarding de cliente novo. |
 | 📁 **Dossiê** | A fonte da verdade. Não produz nada sozinho — é a memória que todo mundo lê e atualiza. |
 
 **Opcionais** (ative se fizerem parte do seu serviço)
 
 | Skill | O que faz |
 |---|---|
+| 🎯 **Captador** | Ajuda **você** a conquistar novos clientes: prospecção, abordagem e qualificação até o prospect pedir proposta (aí entra o Vendedor). Passo opcional, antes da entrevista. |
+| 📧 **E-mail Marketing** | Sequências, campanhas e newsletters (e e-mail frio pro Captador). Produz pronto pra colar na ferramenta de envio. |
+| 💬 **Atendimento** | Scripts de WhatsApp/SAC: saudação, FAQ, qualificação, conversão e objeções — pro cliente e pro inbound da agência. |
 | 📣 **Gestor de Tráfego** | Planeja campanhas de Meta Ads e Google Ads. |
 | 🤝 **Gerente de Contas** | Relatórios pro cliente, relacionamento e retenção pós-venda. |
 | ✅ **Revisor** | Porta de qualidade antes de tudo ir pro ar. |
@@ -51,10 +55,11 @@ Você não precisa ser especialista em marketing: o time te conduz, faz as pergu
 ## 🔄 Como funciona
 
 ```
-  Entrevistador → Analista → Estrategista → Vendedor
+  (Captador*) → Entrevistador → Analista → Estrategista → Vendedor
         → Criador → Designer → Desenvolvedor → Contador
 
         🎼 Maestro orquestra   ·   📁 Dossiê é a memória
+        * Captador = passo opcional pra conquistar o cliente antes de começar
 ```
 
 O **Maestro** sempre sabe o próximo passo. O **Dossiê** guarda o contexto entre as etapas — você pode parar hoje e continuar amanhã sem perder nada.

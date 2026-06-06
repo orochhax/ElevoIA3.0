@@ -5,6 +5,7 @@ atualizado_em: ""
 responsavel: ""              # quem na agência cuida desse cliente
 status_geral: prospeccao    # prospeccao | onboarding | ativo | pausado | encerrado
 etapas:
+  captacao: nao_usado       # opcional (Captador) — nao_usado | em_andamento | concluido
   entrevista: pendente      # pendente | em_andamento | concluido
   analise: pendente
   estrategia: pendente
@@ -30,6 +31,13 @@ canais:
 > Fonte da verdade sobre este cliente. Cada seção tem uma skill "dona" que a preenche.
 > Antes de agir, leia. Depois de produzir, grave aqui e registre no Histórico.
 
+## 0. Captação · *Captador*  *(opcional — só se a agência prospectou este cliente)*
+- **Empresa-alvo:**
+- **Por que abordar (encaixe / dor percebida):**
+- **Canal e abordagem usada:**
+- **Status da captação:** *(Não iniciada · Em prospecção · Conversando · Reunião marcada · Quer proposta (→ Vendedor) · Fechado · Perdido)*
+- **Próximo passo / follow-up:**
+
 ## 1. Identidade · *Entrevistador*
 - **O que é a empresa:**
 - **O que vende (produtos/serviços):**
@@ -50,6 +58,7 @@ canais:
 - **Pilares de conteúdo:**
 - **Linha editorial:**
 - **Calendário (resumo ou link):**
+- **Funil (jornada):**
 
 ## 4. Comercial · *Vendedor*
 - **Oferta:**

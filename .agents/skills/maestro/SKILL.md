@@ -17,6 +17,7 @@ Esta é a ordem recomendada. A coluna "depende de" é o que precisa estar pronto
 
 | Ordem | Etapa (`etapas.*`) | Skill | Depende de | Vira a seção |
 |-------|--------------------|-------|------------|--------------|
+| 0 *(opcional)* | `captacao` | **Captador** | — | 0. Captação |
 | 1 | `entrevista` | **Entrevistador** | — | 1. Identidade |
 | 2 | `analise` | **Analista** (diagnóstico) | Identidade | 2. Diagnóstico digital |
 | 3 | `estrategia` | **Estrategista** | Identidade + Diagnóstico | 3. Estratégia |
@@ -29,10 +30,22 @@ Esta é a ordem recomendada. A coluna "depende de" é o que precisa estar pronto
 
 A última linha não é um passo linear: depois que o conteúdo entra no ar, o Analista volta em ciclos pra medir engajamento e conversão. É um loop, não um fim.
 
+A **etapa 0 (Captação) é opcional** e fica **fora do fluxo automático**: ela serve pra agência *conquistar* este cliente (prospecção/abordagem), e só roda se o usuário pedir. Por padrão `etapas.captacao: nao_usado` — **nunca** trate captação como próximo passo obrigatório nem deixe o Entrevistador esperando por ela. Quem já tem o cliente começa direto na `entrevista`.
+
+## Skills de apoio (fora do fluxo linear)
+
+Além das etapas acima, há skills que entram **sob demanda**, quando o caso pede — não são passos fixos do fluxo automático. Roteie pra elas quando o usuário pedir o que elas fazem:
+
+- **Captador** — conquistar o cliente (passo 0, opcional).
+- **E-mail Marketing** — quando "email" é canal do cliente, ou pra apoiar o Captador no e-mail frio.
+- **Atendimento** — scripts de WhatsApp/SAC (do cliente final e do inbound da agência).
+- **Gestor de Projetos** — SOPs, briefings, gestão de entregas (prazo/aprovação) e onboarding.
+- **Gestor de Tráfego** — anúncios pagos · **Gerente de Contas** — relatórios e retenção · **Revisor** — qualidade antes do ar.
+
 ## Como decidir o próximo passo
 
 1. **Releia o Dossiê** — frontmatter (`status_geral`, `etapas`) e o corpo.
-2. **Ache a primeira etapa que não está `concluido`** seguindo a ordem da tabela.
+2. **Ache a primeira etapa que não está `concluido`** seguindo a ordem da tabela — **ignorando as `nao_usado`** (como a `captacao`). Na prática, o fluxo padrão começa na `entrevista`.
 3. **Cheque as dependências dela.** Se algo de que ela depende está vazio/`pendente`, o verdadeiro próximo passo é a dependência — roteie pra lá primeiro e explique o porquê ("dá pra fazer a estratégia, mas o diagnóstico ainda está vazio, e ele muda o rumo — melhor fechar o Analista antes").
 4. **Recomende esse passo** ao usuário, em uma linha clara: qual skill, por quê agora, e o que ela vai produzir.
 

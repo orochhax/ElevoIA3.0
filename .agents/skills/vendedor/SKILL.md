@@ -15,6 +15,8 @@ Princípio central: **as pessoas pagam por transformação, não por tarefa.** "
 
 Leia o Dossiê (`dossie.md`): seção 1 (objetivo, persona, diferenciais), seção 2 (a dor — o que falta, as prioridades) e seção 3 (a estratégia que vai entregar). A proposta nasce desses três: o diagnóstico é a dor, a estratégia é a solução, o objetivo é a promessa.
 
+Se este prospect veio da **Captação** (seção 0), leia também o que o **Captador** levantou — a dor percebida e o canal de abordagem já vêm de lá, e foi ele quem te passou o bastão quando o prospect pediu proposta.
+
 ## Construir a oferta
 
 1. **Escopo e entregáveis** — o que está incluso, em que volume, com que prazo e formato. Seja concreto (o cliente precisa saber exatamente o que recebe).

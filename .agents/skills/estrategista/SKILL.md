@@ -1,6 +1,6 @@
 ---
 name: estrategista
-description: O Estrategista transforma o diagnóstico em plano de conteúdo: define o POSICIONAMENTO da marca, os PILARES de conteúdo, a LINHA EDITORIAL e o CALENDÁRIO. É o "norte" que o Criador e o Designer seguem — sem ele, o conteúdo sai genérico e sem direção. Use SEMPRE que o usuário falar em estratégia de conteúdo, posicionamento, pilares, linha editorial, planejamento, calendário editorial, "o que postar", "plano de conteúdo", ou quando a etapa "estrategia" do Dossiê estiver pendente e já houver identidade e diagnóstico. Grava na seção 3 (Estratégia) do Dossiê.
+description: O Estrategista transforma o diagnóstico em plano de conteúdo: define o POSICIONAMENTO da marca, os PILARES de conteúdo, a LINHA EDITORIAL e o CALENDÁRIO. É o "norte" que o Criador e o Designer seguem — sem ele, o conteúdo sai genérico e sem direção. Use SEMPRE que o usuário falar em estratégia de conteúdo, posicionamento, pilares, linha editorial, planejamento, calendário editorial, "o que postar", "plano de conteúdo", funil de marketing/vendas, jornada do cliente, ou quando a etapa "estrategia" do Dossiê estiver pendente e já houver identidade e diagnóstico. Grava na seção 3 (Estratégia) do Dossiê.
 ---
 
 # O Estrategista
@@ -17,7 +17,7 @@ Seu princípio central: **estratégia é escolha**. Posicionar é decidir o que 
 2. **Cheque a base.** Se Identidade ou Diagnóstico estão vazios, sua estratégia vai flutuar no ar. Avise e roteie de volta pro Entrevistador/Analista antes de seguir — esse é o tipo de coisa que o Maestro também sinaliza.
 3. **Olhe os canais** (`canais` no frontmatter): a estratégia se ajusta ao que o cliente usa/quer usar.
 
-## Os 4 entregáveis
+## Os 5 entregáveis
 
 ### 1. Posicionamento
 
@@ -60,9 +60,26 @@ O plano que o Criador pega e executa. Entregue a **cadência** (posts/semana, di
 - Amarre o calendário às **prioridades do diagnóstico**: se o Analista disse "sem link na bio / sem Google", a primeira semana pode incluir arrumar a base, não só postar.
 - Se o calendário passar de ~1 mês ou ficar grande, salve em `conteudo/calendario.md` e deixe um resumo + link no Dossiê.
 
+### 5. Funil (a jornada)
+
+O mapa de **como um estranho vira cliente** — e qual peça/skill atua em cada etapa. É o que conecta o time inteiro num caminho só, em vez de posts soltos. Desenhe as 5 etapas e, em cada uma, **o objetivo, a peça e quem produz**:
+
+> ⚠️ Este é o funil **do cliente** (como o negócio dele conquista os clientes dele). Não confunda com o funil de vendas **da agência** — esse é o **Captador → Vendedor**, que é como *você* conquista o cliente. Aqui não entram Vendedor nem Gerente de Contas (eles cuidam da relação agência↔cliente).
+
+| Etapa | Objetivo | Peça / canal | Skill |
+|-------|----------|--------------|-------|
+| **Topo — Atrair** | alcançar quem nem conhece a marca | conteúdo de atração, anúncio | Criador · Designer · Gestor de Tráfego |
+| **Captura — Virar lead** | pegar o contato | isca, link na bio, landing, WhatsApp | Desenvolvedor · E-mail Marketing · Atendimento |
+| **Meio — Nutrir** | criar relação e confiança até a compra | e-mail de nutrição, conteúdo de conexão | E-mail Marketing · Criador |
+| **Fundo — Converter** | virar cliente do negócio | atendimento, página de venda, oferta | Atendimento · Desenvolvedor |
+| **Pós — Reter** | manter e gerar indicação | pós-compra, reativação, conteúdo de relacionamento | E-mail Marketing · Atendimento · Criador |
+
+- **Aponte os furos:** se não há captura de lead, o topo vaza; se não há nutrição, o lead esfria. O furo é a prioridade.
+- Amarre o funil à **prioridade do diagnóstico** e ao **objetivo** do cliente. Em negócio local, muitas vezes o funil é curto (atrair → WhatsApp → fechar) — não invente etapas que o cliente não sustenta.
+
 ## Gravar no Dossiê (seção 3)
 
-Preencha **Posicionamento**, **Pilares de conteúdo**, **Linha editorial** e **Calendário** na seção 3. Siga o protocolo da skill **dossie**: edite só a seção 3, `etapas.estrategia: concluido`, `atualizado_em` hoje, e logue no Histórico (`- [data] Estratégia definida: posicionamento + N pilares + calendário (Estrategista)`). Mostre o plano pro usuário antes de fechar.
+Preencha **Posicionamento**, **Pilares de conteúdo**, **Linha editorial**, **Calendário** e **Funil** na seção 3. Siga o protocolo da skill **dossie**: edite só a seção 3, `etapas.estrategia: concluido`, `atualizado_em` hoje, e logue no Histórico (`- [data] Estratégia definida: posicionamento + N pilares + calendário + funil (Estrategista)`). Mostre o plano pro usuário antes de fechar.
 
 ## Critério de qualidade
 

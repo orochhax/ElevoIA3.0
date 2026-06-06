@@ -34,11 +34,13 @@ A auditoria é **guiada pelos canais do Dossiê**, não por uma lista fixa:
 
 Para cada canal em escopo, classifique os itens: ✅ tem e está bom · 🟡 tem mas está fraco · ❌ não tem.
 
-**1. Ser achado (Google)**
+**1. Ser achado (Google / SEO local)**
 - Perfil da Empresa no Google (Google Meu Negócio) preenchido e verificado; aparece no Maps
 - Categoria certa, horário, fotos, telefone/WhatsApp
-- Avaliações: quantas, que nota, e se são respondidas
-- Aparece ao buscar o nome no Google
+- **NAP consistente** — nome, endereço e telefone iguais no Google, site e Instagram (divergência derruba o ranqueamento local)
+- Aparece no **Map Pack** ao buscar "[nicho] em [cidade]" (não só pelo nome) — e em que posição
+- Descrição e posts do perfil com **palavras-chave locais**; fotos recentes
+- Avaliações: quantas, que nota, e se são respondidas (volume e recência pesam no SEO local)
 
 **2. Instagram**
 - Conta profissional; bio diz em 1 linha o que faz + pra quem + uma chamada

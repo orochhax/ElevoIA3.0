@@ -40,6 +40,15 @@ Leia o Dossiê: seção 4 (a oferta e o CTA comercial), seção 5 (copy/mensagen
 - Comece pelo template em [assets/template-landing.html](assets/template-landing.html) e adapte.
 - **Aplique a `frontend-design`** ao montar o visual: direção estética clara, hierarquia tipográfica forte, espaçamento generoso e detalhes caprichados — nada de layout genérico. Sem nunca sacrificar a conversão, a velocidade ou a identidade da marca por estética.
 
+## SEO on-page (local)
+
+Todo site que você entrega já sai com o SEO básico local feito — é o que faz o cliente ser achado no Google:
+- **Title e meta description** com o serviço + a cidade (ex.: "Internet fibra em Eunápolis | LinkPRO").
+- **Um H1 claro** e headings com as palavras que a persona realmente busca.
+- **NAP no rodapé** (nome, endereço, telefone iguais aos do Google) e, quando fizer sentido, **mapa do Google embutido**.
+- **Schema `LocalBusiness`** (dados estruturados) pra o Google entender o negócio e a localização.
+- **`alt` nas imagens**, URLs limpas — além da velocidade e do mobile que você já cuida.
+
 ## Onde salvar e gravar (seção 7)
 
 Arquivos em `web/`. Resuma na seção 7 do Dossiê (URLs quando publicado, status, o que é cada página), protocolo da skill **dossie**: `etapas.site`, `atualizado_em`, log no Histórico.

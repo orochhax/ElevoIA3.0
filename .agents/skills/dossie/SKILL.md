@@ -39,17 +39,18 @@ O frontmatter tem três partes importantes:
 
 - **Identificação e contato** — quem é o cliente e como falar com ele.
 - **`canais`** — os canais que o cliente **já usa** (`usa`) e os que **quer começar** (`quer_usar`). O **Entrevistador** preenche na descoberta; o **Analista** usa isso para saber exatamente o que auditar.
-- **`etapas`** — um rastreador de progresso (`pendente` | `em_andamento` | `concluido`) para cada fase do fluxo. É isso que o **Maestro** lê para decidir o próximo passo, e o que o **Analista** lê para auditar o que falta.
+- **`etapas`** — um rastreador de progresso (`pendente` | `em_andamento` | `concluido`) para cada fase do fluxo. É isso que o **Maestro** lê para decidir o próximo passo, e o que o **Analista** lê para auditar o que falta. A etapa **`captacao`** é **opcional** e usa o valor `nao_usado` por padrão (a agência só prospecta este cliente se quiser); o Maestro **ignora** etapas `nao_usado` ao decidir o próximo passo — o fluxo padrão começa na `entrevista`.
 
 As seções do corpo, cada uma "de dono" de uma skill:
 
 | Seção | Skill dona | O que guarda |
 |-------|-----------|--------------|
+| 0. Captação *(opcional)* | Captador | empresa-alvo, abordagem e status da prospecção — antes de o prospect virar cliente |
 | 1. Identidade | Entrevistador | o que é a empresa, o que vende, pra quem, tom de voz, objetivo |
 | 2. Diagnóstico digital | Analista | canais atuais, o que existe, o que falta pra estar 100% no digital |
 | 3. Estratégia | Estrategista | posicionamento, pilares, linha editorial, calendário |
 | 4. Comercial | Vendedor | oferta, escopo, preço de venda, valor percebido, status da proposta |
-| 5. Conteúdo | Criador | links/resumo das copies, legendas e roteiros produzidos |
+| 5. Conteúdo | Criador (+ E-mail Marketing) | links/resumo das copies, legendas, roteiros e e-mails produzidos |
 | 6. Visual | Designer | identidade visual e peças produzidas |
 | 7. Web | Desenvolvedor | sites e landing pages (URLs, status) |
 | 8. Financeiro do projeto | Contador | receita, custos, margem e lucro **deste** cliente |
@@ -63,7 +64,7 @@ As seções do corpo, cada uma "de dono" de uma skill:
 Quando o cliente deste projeto entra (prospecção/onboarding) e ainda não há `dossie.md`:
 
 1. Copie [assets/template-dossie.md](assets/template-dossie.md) para `dossie.md` na raiz.
-2. Preencha no frontmatter: `cliente`, `criado_em` e `atualizado_em` (data de hoje), e o que já souber de contato. Deixe `status_geral: prospeccao` e todas as `etapas` em `pendente`.
+2. Preencha no frontmatter: `cliente`, `criado_em` e `atualizado_em` (data de hoje), e o que já souber de contato. Deixe `status_geral: prospeccao`, a etapa `captacao` em `nao_usado` (só o Captador muda isso) e as demais `etapas` em `pendente`.
 3. Adicione a primeira linha no Histórico: `- [data] Dossiê criado.`
 
 Não invente respostas para as seções — quem preenche cada uma é a skill dona. O dossiê recém-criado é um esqueleto com tudo "a preencher".

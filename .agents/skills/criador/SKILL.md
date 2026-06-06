@@ -43,6 +43,13 @@ Leia o Dossiê: seção 1 (tom de voz — inclusive o "nunca fale assim" — e p
 
 Antes de entregar, releia contra o tom da Identidade: os adjetivos batem? Você caiu em algum "nunca fale assim"? Uma marca descontraída não pode soar corporativa, e vice-versa. Consistência de voz é o que faz parecer a mesma marca em todo post.
 
+## SEO local no conteúdo
+
+Quando o cliente é um negócio local, o conteúdo também ajuda a ser achado:
+- Use **palavras-chave locais** ("[serviço] em [cidade/bairro]") de forma natural na legenda, na primeira linha e na copy do site.
+- Produza **conteúdo pro Perfil do Google** quando pedirem: descrição do negócio e Google posts (novidade/oferta) com as mesmas palavras.
+- Marque a localização nos posts. Nunca encha de palavra-chave — sempre soando natural.
+
 ## Onde salvar e gravar (seção 5)
 
 - Salve os textos em `conteudo/` com nome claro (ex.: `conteudo/2026-06-08-carrossel-3-erros.md`).

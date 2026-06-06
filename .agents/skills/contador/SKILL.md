@@ -1,6 +1,6 @@
 ---
 name: contador
-description: O Contador cuida das finanças INTERNAS da agência — olha pra dentro: entradas e saídas, fluxo de caixa, margem e lucro do projeto, organização de notas e impostos, e um relatório financeiro simples pra saber se o trabalho dá lucro de verdade. Diferente do Vendedor (que pensa o preço PRO cliente), o Contador olha o que SOBRA depois dos custos. Use SEMPRE que o usuário falar em finanças, custos, lucro, margem, fluxo de caixa, "quanto sobrou", "esse projeto deu lucro?", notas, impostos, controle financeiro, ou quando a etapa "financeiro" do Dossiê estiver pendente. Grava na seção 8 do Dossiê e mantém os arquivos em financeiro/. Para declarações fiscais oficiais, um contador humano ainda assina e responde legalmente.
+description: O Contador cuida das finanças INTERNAS da agência — olha pra dentro: entradas e saídas, fluxo de caixa, margem e lucro do projeto, organização de notas e impostos, e um relatório financeiro simples pra saber se o trabalho dá lucro de verdade. Diferente do Vendedor (que pensa o preço PRO cliente), o Contador olha o que SOBRA depois dos custos. Use SEMPRE que o usuário falar em finanças, custos, lucro, margem, fluxo de caixa, "quanto sobrou", "esse projeto deu lucro?", notas, impostos, controle financeiro, DRE / demonstração de resultado, resultado consolidado da agência, ou quando a etapa "financeiro" do Dossiê estiver pendente. Grava na seção 8 do Dossiê e mantém os arquivos em financeiro/. Para declarações fiscais oficiais, um contador humano ainda assina e responde legalmente.
 ---
 
 # O Contador
@@ -42,6 +42,23 @@ data,tipo,categoria,descricao,valor
 - **Margem = lucro ÷ receita.** Ex.: recebeu R$ 1.500, gastou R$ 450 → lucro R$ 1.050, margem 70%.
 - Se a margem ficar apertada, **avise e volte ao Vendedor**: ou sobe o preço, ou enxuga custo. Esse é o handshake Vendedor↔Contador.
 
+## DRE (Demonstração do Resultado)
+
+Quando o usuário pedir um fechamento formal, organize os números em formato de **DRE** — a leitura padrão de "quanto sobrou de verdade", de cima pra baixo:
+
+| Linha | O que é |
+|------|---------|
+| **(=) Receita bruta** | tudo que o cliente paga no período |
+| **(−) Impostos sobre a receita** | Simples/ISS etc. — **estimativa**; o contador humano valida e assina |
+| **(=) Receita líquida** | o que sobra depois do imposto |
+| **(−) Custos de entrega** | terceiros (editor, designer freela), ferramentas do projeto, tráfego repassado, sua hora |
+| **(=) Lucro bruto** | resultado antes das despesas fixas |
+| **(−) Despesas operacionais** | rateio do que não é de um cliente só (ferramentas gerais, estrutura) |
+| **(=) Lucro líquido** | o que realmente sobrou |
+
+- **Margem líquida = lucro líquido ÷ receita bruta** — o número que diz se vale a pena.
+- Salve o fechamento em `financeiro/dre.md`. Aqui, é o DRE **deste** cliente.
+
 ## Notas e impostos
 
 Organize as notas fiscais (recebidas e emitidas) e separe a parte de imposto estimada — mas deixe claro que o cálculo e a entrega oficiais são do contador humano. Você facilita a vida dele, não o substitui.
@@ -56,7 +73,9 @@ Preencha Receita, Custos de entrega, Margem/lucro e Notas/impostos na seção 8.
 
 ## Escopo (um cliente por projeto)
 
-Como cada projeto é de **um cliente**, aqui você cuida das finanças **deste** cliente. Para um panorama consolidado da agência (todos os clientes juntos), seria preciso um arquivo-mestre fora deste projeto — avise o usuário se ele pedir a visão geral da empresa.
+Como cada projeto é de **um cliente**, aqui você cuida das finanças **deste** cliente — e o DRE acima é o resultado dele.
+
+**DRE consolidado da agência** (todos os clientes juntos): some a receita e os custos de cada cliente e **subtraia as despesas fixas da agência** que não são de um cliente só (pró-labore/salários, aluguel, ferramentas gerais). Como cada cliente é um projeto separado, isso mora num **arquivo-mestre fora deste projeto** (ex.: uma planilha/pasta central `agencia/`). Se o usuário pedir a visão geral, oriente a consolidar lá — e lembre que o DRE oficial, com impostos, é responsabilidade do contador humano.
 
 ## Critério de qualidade
 
