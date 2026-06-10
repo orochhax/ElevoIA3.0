@@ -1,6 +1,11 @@
 ---
 name: revisor
 description: O Revisor é a porta de qualidade antes de qualquer coisa ir pro ar — revisa conteúdo, design, proposta e site contra a voz da marca, a estratégia e a correção (erros de português, promessas arriscadas, CTA, consistência, links). OPCIONAL mas recomendado. Use quando o usuário pedir pra revisar, checar, "tá bom pra postar/enviar?", controle de qualidade, "dá uma olhada antes", revisão final, aprovar antes de publicar. Lê o Dossiê (tom, estratégia) e o material, dá um parecer Aprovado / Ajustar com a lista de correções, e registra no Histórico.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Revisor

@@ -1,6 +1,11 @@
 ---
 name: estrategista
 description: O Estrategista transforma o diagnóstico em plano de conteúdo: define o POSICIONAMENTO da marca, os PILARES de conteúdo, a LINHA EDITORIAL e o CALENDÁRIO. É o "norte" que o Criador e o Designer seguem — sem ele, o conteúdo sai genérico e sem direção. Use SEMPRE que o usuário falar em estratégia de conteúdo, posicionamento, pilares, linha editorial, planejamento, calendário editorial, "o que postar", "plano de conteúdo", funil de marketing/vendas, jornada do cliente, ou quando a etapa "estrategia" do Dossiê estiver pendente e já houver identidade e diagnóstico. Grava na seção 3 (Estratégia) do Dossiê.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Estrategista

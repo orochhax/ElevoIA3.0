@@ -76,9 +76,12 @@ O **Maestro** sempre sabe o próximo passo. O **Dossiê** guarda o contexto entr
 ```bash
 git clone https://github.com/orochhax/ElevoIA3.0.git cliente-novo
 cd cliente-novo
+rm -rf .git && git init
 claude
 ```
-> `cliente-novo` é só o nome da pasta — troque pelo nome do cliente (regra: **1 pasta = 1 cliente**). O `cd` entra nela porque o `claude` precisa rodar **de dentro** do projeto.
+> `cliente-novo` é só o nome da pasta — troque pelo nome do cliente (regra: **1 pasta = 1 cliente**). O `rm -rf .git && git init` limpa o histórico do ElevoIA e inicia um repositório novo e limpo para o cliente. O `cd` entra na pasta porque o `claude` precisa rodar **de dentro** do projeto.
+>
+> ⚠️ **Privacidade:** o `dossie.md` e as pastas de saída contêm dados do cliente. Não suba esse repositório para um local público; mantenha-o privado ou local.
 
 ### 2) Inicie a descoberta (o resto corre sozinho)
 Dentro do Claude Code, digite:
@@ -106,7 +109,12 @@ O **Entrevistador** faz as perguntas e monta o `dossie.md`. Quando a entrevista 
 ├── web/                 ← sites e landing pages do Desenvolvedor
 ├── proposta/            ← propostas do Vendedor
 ├── financeiro/          ← controle financeiro do Contador
-└── .agents/skills/      ← o time de skills (o "motor" da ferramenta)
+├── email/               ← e-mails e sequências do E-mail Marketing (criada sob demanda)
+├── atendimento/         ← scripts de WhatsApp/SAC do Atendimento (sob demanda)
+├── operacao/            ← SOPs, briefings e entregas do Gestor de Projetos (sob demanda)
+├── trafego/             ← planos de campanha do Gestor de Tráfego (sob demanda)
+├── relatorios/          ← relatórios do Gerente de Contas (sob demanda)
+└── .claude/skills/      ← o time de skills (o "motor" da ferramenta)
 ```
 
 ---

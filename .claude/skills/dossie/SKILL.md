@@ -1,6 +1,11 @@
 ---
 name: dossie
 description: Gerencia o Dossiê — o documento único e fonte da verdade sobre cada cliente da agência. Use SEMPRE que precisar criar o dossiê de um cliente novo, consultar o que já se sabe sobre um cliente, ver em que etapa o cliente está, ou registrar/atualizar qualquer informação de cliente (identidade, diagnóstico digital, estratégia, proposta comercial, conteúdo, design, site, financeiro, métricas). Toda skill da agência (Entrevistador, Analista, Estrategista, Vendedor, Criador, Designer, Desenvolvedor, Contador, Maestro) deve LER o Dossiê antes de começar e GRAVAR o resultado nele ao terminar — esta skill define o formato, a localização e as regras de atualização. Dispare também quando o usuário falar em "cliente", "onboarding", "ficha do cliente", "cadastrar cliente" ou "o que a gente já sabe sobre o cliente X", mesmo sem citar a palavra "dossiê".
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Dossiê

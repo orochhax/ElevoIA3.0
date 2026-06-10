@@ -1,6 +1,11 @@
 ---
 name: maestro
 description: O maestro/orquestrador do time de skills da agência. Use SEMPRE que o usuário quiser saber "em que pé está o cliente", "o que falta", "qual o próximo passo", "por onde começo", ou quando ele quiser tocar o trabalho do cliente sem dizer exatamente qual etapa rodar. O Maestro lê o Dossiê, descobre em que ponto do fluxo o cliente está, mostra um painel de status e chama a skill certa na ordem certa (Entrevistador → Analista → Estrategista → Vendedor → Criador → Designer → Desenvolvedor → Contador). Dispare também no início de uma sessão de trabalho com o cliente, quando o usuário parecer perdido sobre o que fazer, quando pedir um panorama/status do projeto, ou quando disser algo genérico como "vamos trabalhar nesse cliente" sem especificar a tarefa.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Maestro
@@ -45,7 +50,7 @@ Além das etapas acima, há skills que entram **sob demanda**, quando o caso ped
 ## Como decidir o próximo passo
 
 1. **Releia o Dossiê** — frontmatter (`status_geral`, `etapas`) e o corpo.
-2. **Ache a primeira etapa que não está `concluido`** seguindo a ordem da tabela — **ignorando as `nao_usado`** (como a `captacao`). Na prática, o fluxo padrão começa na `entrevista`.
+2. **Ache a primeira etapa que não está `concluido` nem `nao_usado`** seguindo a ordem da tabela. Qualquer etapa pode estar `nao_usado` (fora do escopo deste cliente) — trate-a como concluída para fins de sequência. Na prática, o fluxo padrão começa na `entrevista`.
 3. **Cheque as dependências dela.** Se algo de que ela depende está vazio/`pendente`, o verdadeiro próximo passo é a dependência — roteie pra lá primeiro e explique o porquê ("dá pra fazer a estratégia, mas o diagnóstico ainda está vazio, e ele muda o rumo — melhor fechar o Analista antes").
 4. **Recomende esse passo** ao usuário, em uma linha clara: qual skill, por quê agora, e o que ela vai produzir.
 
@@ -70,7 +75,7 @@ Quando o usuário pede panorama — ou no começo de qualquer sessão — mostre
 ➡️  Próximo passo: terminar a Estratégia (Estrategista) — falta o calendário.
 ```
 
-Use ✅ concluído · 🔄 em andamento · ⬜ pendente. Termine sempre com a linha **Próximo passo**.
+Use ✅ concluído · 🔄 em andamento · ⏳ aguardando · ➖ não usado · ⬜ pendente. Termine sempre com a linha **Próximo passo**.
 
 ## Como fazer o handoff
 
@@ -80,12 +85,18 @@ Por padrão, **encadeie as etapas automaticamente, sem pedir permissão pra cont
 2. **Execute seguindo o SKILL.md daquela skill** — você assume o papel dela, lê o Dossiê, faz o trabalho e grava de volta seguindo o protocolo da skill **dossie**.
 3. Ao terminar, atualize o painel e **siga direto pra próxima etapa**, sem parar pra perguntar. Encadeie todas as etapas assim, uma após a outra, até o fim do fluxo (ou até o usuário pedir pra parar).
 
-A única coisa que te faz parar é uma **dependência vazia**: se a próxima etapa depende de algo que ainda não existe, resolva a dependência primeiro (veja "Bloqueios e desvios"). Fora isso, não trave o fluxo esperando aprovação.
+O fluxo automático para em três situações:
+1. **Dependência vazia** — a próxima etapa precisa de algo que ainda não existe; resolva a dependência primeiro (veja "Bloqueios e desvios").
+2. **Etapa `aguardando` sem próxima disponível** — todas as etapas restantes estão bloqueadas por terceiros; registre os bloqueios no painel (⏳) e informe o usuário para retomar quando o terceiro responder.
+3. **Usuário interrompe** — qualquer mensagem do usuário fora do fluxo ou pedido de pausa; responda e retome quando ele quiser.
+
+Fora essas três situações, não trave o fluxo esperando aprovação.
 
 ## Bloqueios e desvios
 
 - **Pulos de etapa são permitidos, mas avisados.** Se o usuário quer ir direto pro Conteúdo sem Estratégia, faça — mas alerte que o resultado vai ser mais genérico sem os pilares definidos, e ofereça fechar a base antes.
 - **Dependência vazia = pare e roteie.** Não deixe uma skill trabalhar no escuro. Mande primeiro pra etapa que falta.
+- **Etapa `aguardando` = pule com registro.** Se a etapa está travada por um terceiro (ex.: proposta enviada ao cliente, esperando aprovação), não fique preso recomendando a mesma skill: avance para a próxima etapa cujas dependências já estão satisfeitas, mostre o bloqueio no painel (⏳) e siga o fluxo. Quando o terceiro responder, a etapa volta ao fluxo normal.
 - **Divergência frontmatter × corpo.** Se uma `etapa` diz `concluido` mas a seção está vazia (ou vice-versa), conserte o frontmatter, avise o usuário e registre no Histórico.
 
 ## Continuidade

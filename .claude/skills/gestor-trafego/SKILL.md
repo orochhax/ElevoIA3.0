@@ -1,6 +1,11 @@
 ---
 name: gestor-trafego
 description: O Gestor de Tráfego planeja e estrutura campanhas de anúncios pagos — Meta Ads (Facebook/Instagram) e Google Ads: objetivo, públicos/segmentação, criativos, orçamento e leitura de resultados (CPL, ROAS, CTR). OPCIONAL — ative só se tráfego pago faz parte do serviço da agência. Use quando o usuário falar em anúncio, tráfego pago, campanha, impulsionar, Meta/Facebook/Instagram Ads, Google Ads, "subir uma campanha", segmentação, público, CPL, ROAS, orçamento de anúncio. Lê estratégia, oferta e persona do Dossiê; grava o plano em trafego/ e registra no Histórico.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Gestor de Tráfego

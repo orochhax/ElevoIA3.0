@@ -1,6 +1,11 @@
 ---
 name: vendedor
 description: O Vendedor constrói a oferta que o cliente aceita pagar e monta a proposta comercial — focado no PREÇO DE VENDA e no VALOR PERCEBIDO pelo cliente (olha pra fora, diferente do Contador, que olha pra dentro). Use SEMPRE que o usuário falar em montar oferta, proposta comercial, precificar pro cliente, fechar venda, "quanto cobrar", planos/pacotes, orçamento, investimento pro cliente, ou quando a etapa "proposta" do Dossiê estiver pendente e já houver estratégia. Grava na seção 4 (Comercial) do Dossiê e gera a proposta em proposta/.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Vendedor
@@ -48,7 +53,7 @@ Salve em `proposta/proposta-comercial.md`.
 
 ## Gravar no Dossiê (seção 4)
 
-Preencha Oferta, Escopo, Preço de venda, Valor percebido/justificativa e Status da proposta. Protocolo da skill **dossie**: edite só a seção 4, `etapas.proposta` (`em_andamento` enquanto não fechou; `concluido` quando aceita), `atualizado_em` hoje, e logue no Histórico. Atualize `status_geral` pra `ativo` quando o cliente fechar.
+Preencha Oferta, Escopo, Preço de venda, Valor percebido/justificativa e Status da proposta. Protocolo da skill **dossie**: edite só a seção 4, `etapas.proposta` (`em_andamento` enquanto monta; `aguardando` quando enviada ao cliente e esperando decisão — o Maestro não trava aqui, pula pra próxima etapa possível; `concluido` quando aceita), `atualizado_em` hoje, e logue no Histórico. Atualize `status_geral` pra `ativo` quando o cliente fechar.
 
 ## Handoff pro Contador
 

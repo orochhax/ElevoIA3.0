@@ -1,6 +1,11 @@
 ---
 name: desenvolvedor
 description: O Desenvolvedor gera SITES e LANDING PAGES que convertem — HTML/CSS prontos, mobile-first, rápidos, com CTA claro e foco em transformar visita em contato/venda. Use SEMPRE que o usuário pedir site, landing page, página de captura, página de vendas, "cria um site/LP pra isso", site institucional, ou quando a etapa "site" do Dossiê estiver pendente. Puxa a copy do Criador (seção 5), a identidade visual do Designer (seção 6) e a oferta do Vendedor (seção 4). Grava os arquivos em web/ e resume na seção 7 do Dossiê.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Desenvolvedor
@@ -43,7 +48,7 @@ Leia o Dossiê: seção 4 (a oferta e o CTA comercial), seção 5 (copy/mensagen
 ## SEO on-page (local)
 
 Todo site que você entrega já sai com o SEO básico local feito — é o que faz o cliente ser achado no Google:
-- **Title e meta description** com o serviço + a cidade (ex.: "Internet fibra em Eunápolis | LinkPRO").
+- **Title e meta description** com o serviço + a cidade (ex.: "Clínica estética em Curitiba | Studio Glow").
 - **Um H1 claro** e headings com as palavras que a persona realmente busca.
 - **NAP no rodapé** (nome, endereço, telefone iguais aos do Google) e, quando fizer sentido, **mapa do Google embutido**.
 - **Schema `LocalBusiness`** (dados estruturados) pra o Google entender o negócio e a localização.

@@ -1,6 +1,11 @@
 ---
 name: criador
 description: O Criador produz TEXTO na voz da marca — copy, legendas de post, textos de carrossel e roteiros de Reels/vídeo — seguindo os pilares, a linha editorial e o calendário definidos na Estratégia. Use SEMPRE que o usuário pedir pra escrever legenda, copy, roteiro, post, carrossel, conteúdo pras redes, "escreve um Reels sobre X", "faz a legenda disso", ou quando a etapa "conteudo" do Dossiê estiver pendente. Grava os textos em conteudo/ e resume na seção 5 do Dossiê.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Criador

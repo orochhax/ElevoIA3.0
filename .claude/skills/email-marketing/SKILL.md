@@ -1,6 +1,11 @@
 ---
 name: email-marketing
 description: O E-mail Marketing escreve E-MAILS que convertem — sequências (boas-vindas, nutrição, lançamento, reativação), campanhas avulsas (promoção, newsletter, anúncio) e e-mails frios de prospecção (apoiando o Captador). Foca no ASSUNTO (que decide a abertura), na copy e no fluxo (gatilho + tempo entre e-mails). Use SEMPRE que o usuário falar em e-mail, e-mail marketing, sequência/fluxo de e-mail, newsletter, e-mail de boas-vindas, nutrição, reativação, campanha de e-mail, assunto de e-mail, disparo, cold e-mail/e-mail frio, ou quando "email" estiver nos canais do cliente. PRODUZ o material pronto pra colar na ferramenta (Mailchimp, Brevo, Gmail...); o disparo/automação em si precisa de conexão externa — se houver Gmail conectado (MCP), pode rascunhar/enviar. Grava em email/ e resume na seção 5 do Dossiê.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O E-mail Marketing

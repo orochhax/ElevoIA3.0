@@ -1,6 +1,11 @@
 ---
 name: captador
 description: O Captador ajuda VOCÊ (o dono da agência / usuário desta ferramenta) a CONQUISTAR NOVOS CLIENTES — empresas para quem prestar serviço de marketing. Cobre prospecção, abordagem fria, qualificação e a condução da conversa até o prospect pedir a proposta — aí passa o bastão pro Vendedor. É a "boca do funil" de novos negócios da agência: passo OPCIONAL e ANTES do Entrevistador. Use SEMPRE que o usuário falar em captar clientes, prospecção, prospectar, conseguir/arrumar clientes, fechar contrato, "como acho clientes", abordagem fria, cold DM/e-mail, lista de prospects, follow-up de venda, ou "preciso de clientes pra agência". NÃO confundir com captar clientes PARA um cliente já fechado (isso é trabalho do Estrategista/Criador). Grava na seção 0 (Captação) do Dossiê.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Captador

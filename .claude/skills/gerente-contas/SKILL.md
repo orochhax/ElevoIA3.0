@@ -1,6 +1,11 @@
 ---
 name: gerente-contas
 description: O Gerente de Contas cuida do relacionamento pós-venda — relatórios para o cliente, cadência de contato, retenção e renovação. Traduz as métricas técnicas do Analista em linguagem de dono de negócio. OPCIONAL. Use quando o usuário falar em relatório pro cliente, reunião de alinhamento, prestação de contas, retenção, renovar contrato, satisfação do cliente, "montar o relatório do mês", relacionamento, follow-up pós-venda. Consolida as métricas (seção 9) num relatório amigável em relatorios/ e registra no Histórico.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Gerente de Contas

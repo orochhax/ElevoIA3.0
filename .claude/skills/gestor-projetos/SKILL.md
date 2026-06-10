@@ -1,6 +1,11 @@
 ---
 name: gestor-projetos
 description: O Gestor de Projetos é a espinha operacional da agência — cuida de COMO o trabalho acontece: cria SOPs (procedimentos-padrão/playbooks), padroniza briefings, controla a gestão de entregas (prazos, status, aprovação do cliente) e o onboarding de cliente novo (checklist de acessos/dados/expectativas). Diferente do Maestro (que decide QUAL skill chamar), o Gestor de Projetos cuida de PRAZO, PROCESSO e ENTREGA. Use SEMPRE que o usuário falar em SOP, processo, playbook, procedimento-padrão, padronizar, briefing, gestão de entregas, prazo, status de entrega, aprovação, onboarding de cliente, checklist, "como a gente faz X", organizar a operação ou escalar a agência. Grava em operacao/ e registra no Histórico.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Gestor de Projetos

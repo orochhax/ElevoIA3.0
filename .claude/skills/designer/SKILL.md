@@ -1,6 +1,11 @@
 ---
 name: designer
 description: O Designer produz o VISUAL — carrosséis, posts estáticos, stories e a identidade visual da marca (paleta de cores, tipografia, estilo). Usa o Canva (via integração, quando conectada) pra gerar e exportar as peças; sem ela, entrega um briefing visual detalhado, pronto pra executar. Use SEMPRE que o usuário pedir arte, post, carrossel, story, identidade visual, paleta de cores, logo, design, "faz a arte disso", "deixa bonito", ou quando a etapa "design" do Dossiê estiver pendente. Grava em design/ e resume na seção 6 do Dossiê.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Designer

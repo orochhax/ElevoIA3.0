@@ -1,6 +1,11 @@
 ---
 name: contador
 description: O Contador cuida das finanças INTERNAS da agência — olha pra dentro: entradas e saídas, fluxo de caixa, margem e lucro do projeto, organização de notas e impostos, e um relatório financeiro simples pra saber se o trabalho dá lucro de verdade. Diferente do Vendedor (que pensa o preço PRO cliente), o Contador olha o que SOBRA depois dos custos. Use SEMPRE que o usuário falar em finanças, custos, lucro, margem, fluxo de caixa, "quanto sobrou", "esse projeto deu lucro?", notas, impostos, controle financeiro, DRE / demonstração de resultado, resultado consolidado da agência, ou quando a etapa "financeiro" do Dossiê estiver pendente. Grava na seção 8 do Dossiê e mantém os arquivos em financeiro/. Para declarações fiscais oficiais, um contador humano ainda assina e responde legalmente.
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - Bash
 ---
 
 # O Contador
@@ -35,6 +40,8 @@ data,tipo,categoria,descricao,valor
 
 - `tipo` é sempre `entrada` ou `saida`. `valor` sempre positivo (o tipo já diz o sinal).
 - Some por tipo pra obter receita, custo total, lucro e margem. (Dá pra abrir o CSV no Excel/Planilhas e somar com `SOMASE`.)
+
+> ⚠️ **Excel pt-BR:** o Excel em português usa `;` como separador de campo (não `,`). Se o arquivo abrir numa coluna só, use "Dados → Texto para Colunas" e escolha `,` como delimitador — ou peça ao usuário que abra via Google Planilhas, que lida melhor com CSV padrão.
 
 ## Margem e lucro do projeto
 
