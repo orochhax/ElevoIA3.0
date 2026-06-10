@@ -1,6 +1,6 @@
 # ElevoIA — instruções do projeto
 
-Este projeto é o **ElevoIA**: um time de skills de IA que presta serviço de marketing para um cliente. As skills ficam em `.agents/skills/` e todas leem/escrevem o `dossie.md` (a fonte da verdade sobre o cliente).
+Este projeto é o **ElevoIA**: um time de skills de IA que presta serviço de marketing para um cliente. As skills ficam em `.claude/skills/` e todas leem/escrevem o `dossie.md` (a fonte da verdade sobre o cliente).
 
 ## Prefixo obrigatório em toda resposta
 
@@ -12,7 +12,7 @@ Este projeto é o **ElevoIA**: um time de skills de IA que presta serviço de ma
 
   Exemplos: `🧠ElevoIA - Captador:` · `🧠ElevoIA - Entrevistador:` · `🧠ElevoIA - Analista:` · `🧠ElevoIA - Estrategista:` · `🧠ElevoIA - Vendedor:` · `🧠ElevoIA - Criador:` · `🧠ElevoIA - Designer:` · `🧠ElevoIA - Desenvolvedor:` · `🧠ElevoIA - E-mail Marketing:` · `🧠ElevoIA - Atendimento:` · `🧠ElevoIA - Contador:` · `🧠ElevoIA - Maestro:` · `🧠ElevoIA - Gestor de Projetos:` · `🧠ElevoIA - Gestor de Tráfego:` · `🧠ElevoIA - Gerente de Contas:` · `🧠ElevoIA - Revisor:`
 
-- Quando o fluxo **já passou por todas as etapas** (todas as `etapas` do Dossiê estão `concluido`) e nenhum agente específico está conduzindo o momento, use só:
+- Quando o fluxo **já passou por todas as etapas** (todas as `etapas` do Dossiê estão `concluido` ou `nao_usado`) e nenhum agente específico está conduzindo o momento, use só:
 
   `🧠ElevoIA:`
 
