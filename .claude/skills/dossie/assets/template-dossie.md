@@ -2,11 +2,12 @@
 cliente: ""
 criado_em: ""
 atualizado_em: ""
+template_versao: 2
 responsavel: ""              # quem na agência cuida desse cliente
 status_geral: prospeccao    # prospeccao | onboarding | ativo | pausado | encerrado
-etapas:
-  captacao: nao_usado       # opcional (Captador) — nao_usado | em_andamento | concluido
-  entrevista: pendente      # pendente | em_andamento | concluido
+etapas:                     # estados: pendente | em_andamento | aguardando (travada por terceiro) | concluido | nao_usado (fora do escopo)
+  captacao: nao_usado       # opcional (Captador)
+  entrevista: pendente      # única etapa que NUNCA pode ser nao_usado
   analise: pendente
   estrategia: pendente
   proposta: pendente
@@ -67,7 +68,7 @@ canais:
 - **Valor percebido / justificativa:**
 - **Status da proposta:**
 
-## 5. Conteúdo · *Criador*
+## 5. Conteúdo · *Criador / E-mail Marketing*
 - **Copies / legendas / roteiros produzidos (resumo + links):**
 
 ## 6. Visual · *Designer*

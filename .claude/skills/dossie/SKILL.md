@@ -25,6 +25,11 @@ Esta skill **não produz conteúdo criativo** — ela é a bibliotecária do tim
   web/               ← saídas do Desenvolvedor (sites, landing pages)
   proposta/          ← saídas do Vendedor (propostas comerciais)
   financeiro/        ← saídas do Contador (planilhas, relatórios)
+  email/             ← saídas do E-mail Marketing (criada sob demanda)
+  atendimento/       ← scripts do Atendimento (sob demanda)
+  operacao/          ← SOPs, briefings e entregas do Gestor de Projetos (sob demanda)
+  trafego/           ← planos de campanha do Gestor de Tráfego (sob demanda)
+  relatorios/        ← relatórios do Gerente de Contas (sob demanda)
 ```
 
 Como há um único dossiê, o caminho é sempre `dossie.md` na raiz do projeto — todas as skills sabem onde encontrá-lo sem precisar de identificador.
@@ -39,7 +44,7 @@ O frontmatter tem três partes importantes:
 
 - **Identificação e contato** — quem é o cliente e como falar com ele.
 - **`canais`** — os canais que o cliente **já usa** (`usa`) e os que **quer começar** (`quer_usar`). O **Entrevistador** preenche na descoberta; o **Analista** usa isso para saber exatamente o que auditar.
-- **`etapas`** — um rastreador de progresso (`pendente` | `em_andamento` | `concluido`) para cada fase do fluxo. É isso que o **Maestro** lê para decidir o próximo passo, e o que o **Analista** lê para auditar o que falta. A etapa **`captacao`** é **opcional** e usa o valor `nao_usado` por padrão (a agência só prospecta este cliente se quiser); o Maestro **ignora** etapas `nao_usado` ao decidir o próximo passo — o fluxo padrão começa na `entrevista`.
+- **`etapas`** — um rastreador de progresso para cada fase do fluxo, com cinco estados: `pendente` | `em_andamento` | `aguardando` | `concluido` | `nao_usado`. É isso que o **Maestro** lê para decidir o próximo passo, e o que o **Analista** lê para auditar o que falta. Os dois estados especiais: **`aguardando`** marca uma etapa travada por um terceiro (ex.: proposta enviada, cliente decidindo) — o Maestro não trava o fluxo nela, pula para a próxima possível e registra o bloqueio; **`nao_usado`** marca uma etapa fora do escopo deste cliente (ex.: fechou sem proposta formal, site não faz parte do pacote) — o Maestro a ignora como se estivesse concluída. A `captacao` já nasce `nao_usado` por padrão (a agência só prospecta este cliente se quiser). A única etapa que **nunca** pode ser `nao_usado` é a `entrevista` — ela é a base de tudo.
 
 As seções do corpo, cada uma "de dono" de uma skill:
 
@@ -83,6 +88,7 @@ Se o dossiê não existir ainda, ofereça criá-lo (modo 1).
 
 Esse é o modo mais delicado, porque várias skills escrevem no mesmo arquivo. As regras existem pra ninguém apagar o trabalho do outro:
 
+- **Releia o `dossie.md` imediatamente antes de editar.** Em sessões longas o contexto compacta e a sua "cópia mental" do arquivo pode estar velha — nunca edite a partir do que você lembra; edite a partir do que acabou de ler.
 - **Edite só a seção do domínio em questão.** Nunca reescreva o dossiê inteiro. Use edição cirúrgica: troque o conteúdo daquela seção e deixe todo o resto **byte a byte** igual.
 - **Atualize `atualizado_em`** no frontmatter para a data de hoje.
 - **Atualize a `etapa` correspondente** (ex.: terminou a entrevista → `etapas.entrevista: concluido`; começou a estratégia → `etapas.estrategia: em_andamento`).
@@ -95,6 +101,8 @@ Esse é o modo mais delicado, porque várias skills escrevem no mesmo arquivo. A
 - O Dossiê é a verdade. Se uma skill descobre algo novo sobre o cliente, **escreve no Dossiê** — não basta dizer pro usuário.
 - Datas sempre no formato `AAAA-MM-DD`.
 - Nunca delete histórico. O log conta a evolução do cliente.
+- `nao_usado` marca etapa fora do escopo; `aguardando` marca etapa travada por terceiro. Nunca use `nao_usado` na `entrevista`.
+- Não remova nem altere `template_versao` manualmente — ele permite migrar dossiês antigos quando o template evoluir.
 - Um projeto = um cliente = um `dossie.md` na raiz. Cliente novo = projeto novo, duplicado vazio.
 - Se o frontmatter e o corpo discordarem (ex.: etapa "pendente" mas a seção está preenchida), conserte o frontmatter e registre no Histórico.
 
