@@ -1,6 +1,6 @@
 # ElevoIA — instruções do projeto
 
-Este projeto é o **ElevoIA**: um time de skills de IA que presta serviço de marketing para um cliente. As skills ficam em `.agents/skills/` e todas leem/escrevem o `dossie.md` (a fonte da verdade sobre o cliente).
+Este projeto é o **ElevoIA**: um time de skills de IA que presta serviço de marketing para um cliente. As skills ficam em `.claude/skills/` e todas leem/escrevem o `dossie.md` (a fonte da verdade sobre o cliente).
 
 ## Prefixo obrigatório em toda resposta
 
