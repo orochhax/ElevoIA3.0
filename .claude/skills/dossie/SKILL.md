@@ -45,8 +45,9 @@ O dossiê é Markdown com um **frontmatter** (cabeçalho estruturado entre `---`
 
 O template canônico está em [assets/template-dossie.md](assets/template-dossie.md). **Sempre** crie dossiês novos a partir desse arquivo — não digite a estrutura de memória, pra ela não divergir com o tempo.
 
-O frontmatter tem três partes importantes:
+O frontmatter tem quatro partes importantes:
 
+- **`modo`** — a relação do usuário com o negócio: **`agencia`** (o usuário presta serviço de marketing pra este cliente) ou **`negocio_proprio`** (o negócio é do próprio usuário). O **Entrevistador** pergunta e preenche logo no início. Esse campo muda o comportamento do time inteiro: em `negocio_proprio` **não existe proposta de serviço de marketing** (`etapas.proposta` fica `nao_usado`), ninguém pergunta "quanto cobrar do cliente", e a linguagem é "seu negócio" / "seus clientes" (os consumidores dele). Dossiês antigos (template_versao 2) não têm esse campo — ao encontrar um, pergunte ao usuário e adicione.
 - **Identificação e contato** — quem é o cliente e como falar com ele.
 - **`canais`** — os canais que o cliente **já usa** (`usa`) e os que **quer começar** (`quer_usar`). O **Entrevistador** preenche na descoberta; o **Analista** usa isso para saber exatamente o que auditar.
 - **`etapas`** — um rastreador de progresso para cada fase do fluxo, com cinco estados: `pendente` | `em_andamento` | `aguardando` | `concluido` | `nao_usado`. É isso que o **Maestro** lê para decidir o próximo passo, e o que o **Analista** lê para auditar o que falta. Os dois estados especiais: **`aguardando`** marca uma etapa travada por um terceiro (ex.: proposta enviada, cliente decidindo) — o Maestro não trava o fluxo nela, pula para a próxima possível e registra o bloqueio; **`nao_usado`** marca uma etapa fora do escopo deste cliente (ex.: fechou sem proposta formal, site não faz parte do pacote) — o Maestro a ignora como se estivesse concluída. A `captacao` já nasce `nao_usado` por padrão (a agência só prospecta este cliente se quiser). A única etapa que **nunca** pode ser `nao_usado` é a `entrevista` — ela é a base de tudo.

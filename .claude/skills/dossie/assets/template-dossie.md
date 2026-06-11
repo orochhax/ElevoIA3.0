@@ -2,8 +2,9 @@
 cliente: ""
 criado_em: ""
 atualizado_em: ""
-template_versao: 2
-responsavel: ""              # quem na agência cuida desse cliente
+template_versao: 3
+modo: ""                    # agencia (o usuário presta serviço de marketing pra este cliente) | negocio_proprio (o negócio é do próprio usuário) — o Entrevistador pergunta e preenche
+responsavel: ""              # modo agencia: quem na agência cuida desse cliente · modo negocio_proprio: deixe vazio
 status_geral: prospeccao    # prospeccao | onboarding | ativo | pausado | encerrado
 etapas:                     # estados: pendente | em_andamento | aguardando (travada por terceiro) | concluido | nao_usado (fora do escopo)
   captacao: nao_usado       # opcional (Captador)

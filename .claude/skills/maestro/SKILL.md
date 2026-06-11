@@ -50,7 +50,7 @@ Além das etapas acima, há skills que entram **sob demanda**, quando o caso ped
 
 ## Como decidir o próximo passo
 
-1. **Releia o Dossiê** — frontmatter (`status_geral`, `etapas`) e o corpo.
+1. **Releia o Dossiê** — frontmatter (`modo`, `status_geral`, `etapas`) e o corpo.
 2. **Ache a primeira etapa que não está `concluido` nem `nao_usado`** seguindo a ordem da tabela. Qualquer etapa pode estar `nao_usado` (fora do escopo deste cliente) — trate-a como concluída para fins de sequência. Na prática, o fluxo padrão começa na `entrevista`.
 3. **Cheque as dependências dela.** Se algo de que ela depende está vazio/`pendente`, o verdadeiro próximo passo é a dependência — roteie pra lá primeiro e explique o porquê ("dá pra fazer a estratégia, mas o diagnóstico ainda está vazio, e ele muda o rumo — melhor fechar o Analista antes").
 4. **Recomende esse passo** ao usuário, em uma linha clara: qual skill, por quê agora, e o que ela vai produzir.
@@ -95,6 +95,7 @@ Fora essas três situações, não trave o fluxo esperando aprovação.
 
 ## Bloqueios e desvios
 
+- **`modo: negocio_proprio` = sem proposta de marketing.** O negócio é do próprio usuário: a etapa `proposta` fica `nao_usado` (se não estiver, conserte), **nunca** roteie pro Vendedor como passo do fluxo, e ninguém pergunta "quanto cobrar do cliente". A linguagem do time muda junto: "seu negócio", "seus clientes" (os consumidores dele). O Vendedor só entra sob demanda, pra empacotar ofertas dos produtos do próprio negócio. Se o `modo` estiver vazio (dossiê antigo), pergunte ao usuário e grave antes de seguir.
 - **Pulos de etapa são permitidos, mas avisados.** Se o usuário quer ir direto pro Conteúdo sem Estratégia, faça — mas alerte que o resultado vai ser mais genérico sem os pilares definidos, e ofereça fechar a base antes.
 - **Dependência vazia = pare e roteie.** Não deixe uma skill trabalhar no escuro. Mande primeiro pra etapa que falta.
 - **Etapa `aguardando` = pule com registro.** Se a etapa está travada por um terceiro (ex.: proposta enviada ao cliente, esperando aprovação), não fique preso recomendando a mesma skill: avance para a próxima etapa cujas dependências já estão satisfeitas, mostre o bloqueio no painel (⏳) e siga o fluxo. Quando o terceiro responder, a etapa volta ao fluxo normal.

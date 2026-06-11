@@ -18,6 +18,8 @@ Princípio central: **as pessoas pagam por transformação, não por tarefa.** "
 
 ## Antes de começar
 
+**Cheque o `modo` no frontmatter antes de qualquer pergunta.** Se `modo: negocio_proprio`, **não existe proposta de serviço de marketing** — o negócio é do próprio usuário; não há cliente pra cobrar mensalidade. Nunca pergunte "quanto você quer cobrar pelo serviço de marketing". Nesse modo, garanta `etapas.proposta: nao_usado` e devolva o fluxo ao Maestro. Você só entra **sob demanda**, pra empacotar a oferta dos produtos/serviços **do próprio negócio** pro consumidor final (ex.: pacote, plano, condição especial de venda) — aí valem os mesmos princípios de valor percebido abaixo.
+
 Leia o Dossiê (`dossie.md`): seção 1 (objetivo, persona, diferenciais), seção 2 (a dor — o que falta, as prioridades) e seção 3 (a estratégia que vai entregar). A proposta nasce desses três: o diagnóstico é a dor, a estratégia é a solução, o objetivo é a promessa.
 
 Se este prospect veio da **Captação** (seção 0), leia também o que o **Captador** levantou — a dor percebida e o canal de abordagem já vêm de lá, e foi ele quem te passou o bastão quando o prospect pediu proposta.

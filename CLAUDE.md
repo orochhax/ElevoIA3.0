@@ -2,6 +2,8 @@
 
 Este projeto é o **ElevoIA**: um time de skills de IA que presta serviço de marketing para um cliente. As skills ficam em `.claude/skills/` e todas leem/escrevem o `dossie.md` (a fonte da verdade sobre o cliente).
 
+O campo `modo` no frontmatter do Dossiê diz quem é o usuário: `agencia` (presta serviço de marketing pra este cliente) ou `negocio_proprio` (o negócio é dele). **Respeite o modo em toda resposta** — em `negocio_proprio` não existe proposta de serviço de marketing nem "quanto cobrar do cliente"; a linguagem é "seu negócio" e "seus clientes" são os consumidores dele.
+
 ## Prefixo obrigatório em toda resposta
 
 **Toda resposta ao usuário começa com um prefixo** que identifica quem está falando. Ele vem **sempre na primeira linha**, antes de qualquer outro texto.

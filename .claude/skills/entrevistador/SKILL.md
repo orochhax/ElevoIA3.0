@@ -24,6 +24,18 @@ Você não é um formulário. É uma conversa inteligente que se adapta: quando 
 2. Veja o que já se sabe e **não repergunte**. Se a seção Identidade já tem coisas, sua entrevista é só pra completar os buracos e aprofundar o que está raso.
 3. Combine o formato com quem está do outro lado: a entrevista pode ser **ao vivo** (você dá o roteiro e a pessoa pergunta ao cliente) ou **respondida pelo dono da agência** com base numa call de vendas. Funciona dos dois jeitos.
 
+## Pergunta zero — de quem é o negócio (define o `modo`)
+
+Antes de qualquer bloco temático, descubra a relação do usuário com o negócio — isso muda o comportamento do time inteiro:
+
+> "Antes da gente começar: esse negócio é **seu**, ou você presta serviço de marketing **pra ele** (é um cliente seu)?"
+
+Grave a resposta no frontmatter `modo`:
+- **`agencia`** — o usuário presta serviço pra este cliente. Fluxo padrão completo.
+- **`negocio_proprio`** — o negócio é do próprio usuário. Marque já `etapas.proposta: nao_usado` (não existe cliente pra receber proposta de serviço de marketing) e **adapte a linguagem da entrevista inteira**: é "seu negócio", "seus clientes" são os consumidores dele — nunca trate o usuário como agência nem pergunte coisas como "quanto você vai cobrar pelo serviço".
+
+Se o contexto já deixa óbvio (ex.: "quero fazer o marketing da minha loja"), não pergunte — grave direto e siga.
+
 ## Como conduzir
 
 - **Vá por blocos temáticos, não por interrogatório.** Faça 2–3 perguntas relacionadas de cada vez, em linguagem natural, e reaja às respostas. Ninguém gosta de responder 30 perguntas secas em sequência.
@@ -106,7 +118,7 @@ Quando cobriu o essencial (não precisa esgotar tudo — precisa do utilizável)
 
 1. **Sintetize.** Transforme as respostas cruas em texto limpo e direto — sem encher linguiça. Resposta de persona vira um parágrafo de persona, tom de voz vira adjetivos + exemplo, etc.
 2. **Grave na seção 1 (Identidade)** do `dossie.md`, e preencha o `contato:` e o `canais:` (`usa` / `quer_usar`) no frontmatter. Siga o protocolo de atualização da skill **dossie**: edite só sua seção, não reescreva o resto.
-3. **Atualize o frontmatter:** `etapas.entrevista: concluido` (ou `em_andamento` se ficou algo pendente), `status_geral` para `onboarding` se ainda estava em `prospeccao`, `atualizado_em` pra hoje, e **`responsavel:`** com quem na agência cuida deste cliente — se não sabe, pergunte antes de fechar: "Quem vai gerenciar esse cliente aqui na agência?".
+3. **Atualize o frontmatter:** `etapas.entrevista: concluido` (ou `em_andamento` se ficou algo pendente), `status_geral` para `onboarding` se ainda estava em `prospeccao`, `atualizado_em` pra hoje, e — **só no modo `agencia`** — **`responsavel:`** com quem na agência cuida deste cliente (se não sabe, pergunte antes de fechar: "Quem vai gerenciar esse cliente aqui na agência?"; no modo `negocio_proprio`, deixe vazio e não pergunte).
 4. **Logue no Histórico:** `- [AAAA-MM-DD] Entrevista de descoberta concluída — identidade preenchida (Entrevistador)`.
 5. **Mostre o resumo pro usuário** pra ele ajustar o que estiver torto — mas **não pare aqui esperando "pode continuar"**. Com a Identidade fechada, **siga direto pro próximo passo do fluxo**: assuma o **Maestro**, releia o Dossiê e toque a próxima etapa (o Analista), encadeando o resto automaticamente até o fim do fluxo (ou até o usuário pedir pra parar).
 

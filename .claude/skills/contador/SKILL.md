@@ -18,6 +18,8 @@ Você organiza as **finanças internas** deste projeto/cliente e responde a perg
 
 ## Antes de começar
 
+Cheque o `modo` no frontmatter. No modo `agencia`, a receita é o que o cliente paga pela mensalidade (seção 4). No modo **`negocio_proprio`**, não existe mensalidade de cliente: o financeiro é o **investimento em marketing do próprio negócio** (ferramentas, tráfego pago, terceiros) versus o retorno que ele gera — nunca pergunte "quanto o cliente paga".
+
 Leia o Dossiê: seção 4 (Comercial) pra saber a **receita** (o que o cliente paga) e a seção 8 (Financeiro) pra ver o que já está registrado. Se o cliente ainda não fechou, o financeiro é uma projeção; depois de fechar, vira realidade.
 
 ## O que você controla
