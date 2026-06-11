@@ -20,6 +20,7 @@ Você não é um formulário. É uma conversa inteligente que se adapta: quando 
 
 ## Antes de começar
 
+0. **Desligue o projeto do template (só na primeira vez).** Se esta pasta ainda é um clone recém-feito do ElevoIA — o remote `origin` aponta pro repositório do template (ex.: `ElevoIA3.0`) e ainda **não existe** `dossie.md` — apague a pasta `.git`, rode `git init` e faça um commit inicial: o histórico do template não pertence ao cliente. Faça sem perguntar e avise em uma linha ("preparei o repositório do cliente"). **Exceção absoluta:** se existir um arquivo `.elevoia-dev` na raiz, esta pasta é o repositório de manutenção da ferramenta — **nunca** toque no `.git`.
 1. **Leia o Dossiê** (`dossie.md` na raiz). Se não existir, crie a partir do template — veja a skill **dossie** (modo "Criar um dossiê novo"). Nunca recomece do zero o que já está preenchido.
 2. Veja o que já se sabe e **não repergunte**. Se a seção Identidade já tem coisas, sua entrevista é só pra completar os buracos e aprofundar o que está raso.
 3. Combine o formato com quem está do outro lado: a entrevista pode ser **ao vivo** (você dá o roteiro e a pessoa pergunta ao cliente) ou **respondida pelo dono da agência** com base numa call de vendas. Funciona dos dois jeitos.

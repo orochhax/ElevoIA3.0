@@ -24,3 +24,6 @@ venv/
 # Logs e temporários
 *.log
 *.tmp
+
+# Marcador local do repositório de manutenção do ElevoIA (nunca commitar)
+.elevoia-dev

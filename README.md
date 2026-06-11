@@ -73,41 +73,27 @@ O **Maestro** sempre sabe o próximo passo. O **Dossiê** guarda o contexto entr
 - **[Claude Code](https://claude.com/claude-code)** instalado
 - **Git**
 
-### 1) Clone e abra o projeto do novo cliente
+### 1) Clone o projeto do novo cliente
 
-> ⚠️ **Estes comandos vão no terminal** (no VSCode: menu *Terminal → Novo Terminal*) — **não no chat do Claude Code**. Colados no chat, a IA "investiga" em vez de executar, e o que levaria 2 segundos vira minutos.
+Copie e cole este comando (no terminal ou direto no chat do Claude Code):
 
-**Windows (PowerShell):**
-```powershell
-git clone https://github.com/orochhax/ElevoIA3.0.git cliente-novo
-cd cliente-novo
-Remove-Item -Recurse -Force .git; git init
-claude
-```
-
-**Mac/Linux (bash):**
 ```bash
 git clone https://github.com/orochhax/ElevoIA3.0.git cliente-novo
-cd cliente-novo
-rm -rf .git && git init
-claude
 ```
 
-> `cliente-novo` é só o nome da pasta — troque pelo nome do cliente (regra: **1 pasta = 1 cliente**). A limpeza do `.git` + `git init` apaga o histórico do ElevoIA e inicia um repositório novo e limpo para o cliente. O `cd` entra na pasta porque o `claude` precisa rodar **de dentro** do projeto.
+> `cliente-novo` é só o nome da pasta — troque pelo nome do cliente (regra: **1 pasta = 1 cliente**).
 >
 > ⚠️ **Privacidade:** o `dossie.md` e as pastas de saída contêm dados do cliente. Não suba esse repositório para um local público; mantenha-o privado ou local.
 
-### 2) Inicie a descoberta (o resto corre sozinho)
-Dentro do Claude Code, escreva no chat:
+### 2) Abra a pasta e inicie a descoberta (o resto corre sozinho)
+
+Abra a pasta clonada no VSCode (ou rode `claude` dentro dela) e escreva no chat:
+
 ```
 entrevistador
 ```
-> Ou, se preferir, já abra direto na entrevista:
-> ```bash
-> claude "entrevistador"
-> ```
 
-O **Entrevistador** faz as perguntas e monta o `dossie.md`. Quando a entrevista fecha, **o time segue sozinho** pelas etapas seguintes — Análise → Estratégia → Proposta → Conteúdo → Design → Site → Financeiro — parando só quando precisa de uma informação sua. Você pode interromper quando quiser.
+O **Entrevistador** prepara o repositório do cliente (desliga o projeto do template automaticamente), faz as perguntas e monta o `dossie.md`. Quando a entrevista fecha, **o time segue sozinho** pelas etapas seguintes — Análise → Estratégia → Proposta → Conteúdo → Design → Site → Financeiro — parando só quando precisa de uma informação sua. Você pode interromper quando quiser.
 
 > 💡 A qualquer momento, escreva `maestro` no chat pra ver um **painel de status**: o que já foi feito e qual é o próximo passo.
 
