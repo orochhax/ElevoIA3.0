@@ -74,13 +74,26 @@ O **Maestro** sempre sabe o próximo passo. O **Dossiê** guarda o contexto entr
 - **Git**
 
 ### 1) Clone e abra o projeto do novo cliente
+
+> ⚠️ **Estes comandos vão no terminal** (no VSCode: menu *Terminal → Novo Terminal*) — **não no chat do Claude Code**. Colados no chat, a IA "investiga" em vez de executar, e o que levaria 2 segundos vira minutos.
+
+**Windows (PowerShell):**
+```powershell
+git clone https://github.com/orochhax/ElevoIA3.0.git cliente-novo
+cd cliente-novo
+Remove-Item -Recurse -Force .git; git init
+claude
+```
+
+**Mac/Linux (bash):**
 ```bash
 git clone https://github.com/orochhax/ElevoIA3.0.git cliente-novo
 cd cliente-novo
 rm -rf .git && git init
 claude
 ```
-> `cliente-novo` é só o nome da pasta — troque pelo nome do cliente (regra: **1 pasta = 1 cliente**). O `rm -rf .git && git init` limpa o histórico do ElevoIA e inicia um repositório novo e limpo para o cliente. O `cd` entra na pasta porque o `claude` precisa rodar **de dentro** do projeto.
+
+> `cliente-novo` é só o nome da pasta — troque pelo nome do cliente (regra: **1 pasta = 1 cliente**). A limpeza do `.git` + `git init` apaga o histórico do ElevoIA e inicia um repositório novo e limpo para o cliente. O `cd` entra na pasta porque o `claude` precisa rodar **de dentro** do projeto.
 >
 > ⚠️ **Privacidade:** o `dossie.md` e as pastas de saída contêm dados do cliente. Não suba esse repositório para um local público; mantenha-o privado ou local.
 
