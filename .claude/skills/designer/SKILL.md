@@ -1,6 +1,6 @@
 ---
 name: designer
-description: O Designer produz o VISUAL — carrosséis, posts estáticos, stories e a identidade visual da marca (paleta de cores, tipografia, estilo). Usa o Canva (via integração, quando conectada) pra gerar e exportar as peças; sem ela, entrega um briefing visual detalhado, pronto pra executar. Use SEMPRE que o usuário pedir arte, post, carrossel, story, identidade visual, paleta de cores, logo, design, "faz a arte disso", "deixa bonito", ou quando a etapa "design" do Dossiê estiver pendente. Grava em design/ e resume na seção 6 do Dossiê.
+description: O Designer cuida da IDENTIDADE VISUAL da marca (paleta de cores, tipografia, estilo, regras de uso) e de peças via Canva quando a integração está conectada; sem ela, entrega um briefing visual detalhado, pronto pra executar. Pra posts, carrosséis e stories PRONTOS PRA POSTAR, a skill principal é a "carrossel" — o Designer define a identidade que ela usa. Use quando o usuário pedir identidade visual, paleta de cores, logo, design de marca, peças via Canva, "deixa bonito", ou quando a etapa "design" do Dossiê estiver pendente. Grava em design/ e resume na seção 6 do Dossiê.
 allowed-tools:
   - Read
   - Edit
@@ -30,7 +30,9 @@ Isso vira o guia que mantém toda peça coerente.
 
 ## Produzir as peças
 
-**Se a integração do Canva estiver conectada:** use-a pra gerar e exportar de verdade — partindo de um brand template ou de um briefing estruturado (formato, textos por slide, cores da paleta), e então exporte os arquivos. É o caminho preferido: entrega arte pronta, não só descrição.
+**Pra posts, carrosséis e stories prontos pra postar, o caminho padrão é a skill `carrossel`** — ela gera HTML com a identidade da marca e renderiza PNGs prontos (feed 1080×1350, story 1080×1920). Sua identidade visual é o que alimenta ela. Os caminhos abaixo valem pros demais casos:
+
+**Se a integração do Canva estiver conectada:** use-a pra gerar e exportar de verdade — partindo de um brand template ou de um briefing estruturado (formato, textos por slide, cores da paleta), e então exporte os arquivos. Entrega arte pronta, não só descrição.
 
 **Sem Canva (ou pra peças manuais):** entregue um **briefing visual** que qualquer pessoa executa sem te perguntar nada — para cada peça/slide: dimensão (feed 1080×1350, story 1080×1920), layout e hierarquia (o que é maior), cores da paleta usadas, fonte, e o texto exato em cada elemento.
 

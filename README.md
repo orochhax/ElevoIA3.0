@@ -27,7 +27,8 @@ Você não precisa ser especialista em marketing: o time te conduz, faz as pergu
 | 🧭 **Estrategista** | Vira o diagnóstico em plano: posicionamento, pilares de conteúdo, linha editorial e calendário. |
 | 💼 **Vendedor** | Monta a oferta e a proposta comercial, focado no preço de venda e no valor percebido pelo cliente. |
 | ✍️ **Criador** | Escreve copy, legendas e roteiros de Reels/vídeo, na voz da marca. |
-| 🎨 **Designer** | Cria o visual: carrosséis, posts, stories e a identidade visual. |
+| 🎨 **Designer** | Define a identidade visual da marca (paleta, tipografia, estilo) e peças via Canva. |
+| 🖼️ **Carrossel** | A skill principal de post pronto: carrosséis, posts e stories renderizados em PNG com a identidade da marca + legenda — pra Instagram, Face, WhatsApp e cia. |
 | 💻 **Desenvolvedor** | Gera sites e landing pages que convertem. |
 | 📊 **Contador** | Cuida das finanças internas: entradas, saídas, margem e lucro do projeto. |
 
@@ -84,18 +85,18 @@ claude
 > ⚠️ **Privacidade:** o `dossie.md` e as pastas de saída contêm dados do cliente. Não suba esse repositório para um local público; mantenha-o privado ou local.
 
 ### 2) Inicie a descoberta (o resto corre sozinho)
-Dentro do Claude Code, digite:
+Dentro do Claude Code, escreva no chat:
 ```
-/entrevistador
+entrevistador
 ```
 > Ou, se preferir, já abra direto na entrevista:
 > ```bash
-> claude "/entrevistador"
+> claude "entrevistador"
 > ```
 
 O **Entrevistador** faz as perguntas e monta o `dossie.md`. Quando a entrevista fecha, **o time segue sozinho** pelas etapas seguintes — Análise → Estratégia → Proposta → Conteúdo → Design → Site → Financeiro — parando só quando precisa de uma informação sua. Você pode interromper quando quiser.
 
-> 💡 A qualquer momento, digite `/maestro` pra ver um **painel de status**: o que já foi feito e qual é o próximo passo.
+> 💡 A qualquer momento, escreva `maestro` no chat pra ver um **painel de status**: o que já foi feito e qual é o próximo passo.
 
 ---
 

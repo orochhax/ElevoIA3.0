@@ -42,6 +42,7 @@ A **etapa 0 (Captação) é opcional** e fica **fora do fluxo automático**: ela
 Além das etapas acima, há skills que entram **sob demanda**, quando o caso pede — não são passos fixos do fluxo automático. Roteie pra elas quando o usuário pedir o que elas fazem:
 
 - **Captador** — conquistar o cliente (passo 0, opcional).
+- **Carrossel** — a skill **principal de conteúdo visual pronto pra postar**: posts, carrosséis e stories pra Instagram, Facebook, WhatsApp, LinkedIn e TikTok (HTML → PNG na identidade da marca + legenda). Sempre que o usuário pedir "um post", "a arte", "um story", roteie pra ela.
 - **E-mail Marketing** — quando "email" é canal do cliente, ou pra apoiar o Captador no e-mail frio.
 - **Atendimento** — scripts de WhatsApp/SAC (do cliente final e do inbound da agência).
 - **Gestor de Projetos** — SOPs, briefings, gestão de entregas (prazo/aprovação) e onboarding.
@@ -98,6 +99,14 @@ Fora essas três situações, não trave o fluxo esperando aprovação.
 - **Dependência vazia = pare e roteie.** Não deixe uma skill trabalhar no escuro. Mande primeiro pra etapa que falta.
 - **Etapa `aguardando` = pule com registro.** Se a etapa está travada por um terceiro (ex.: proposta enviada ao cliente, esperando aprovação), não fique preso recomendando a mesma skill: avance para a próxima etapa cujas dependências já estão satisfeitas, mostre o bloqueio no painel (⏳) e siga o fluxo. Quando o terceiro responder, a etapa volta ao fluxo normal.
 - **Divergência frontmatter × corpo.** Se uma `etapa` diz `concluido` mas a seção está vazia (ou vice-versa), conserte o frontmatter, avise o usuário e registre no Histórico.
+
+## Como orientar o usuário sobre skills
+
+Ao recomendar que o usuário chame uma skill, **nunca use a sintaxe `/skill-name`** — ela não funciona no Claude Code e gera "Unknown command". Use sempre texto simples, sem barra:
+
+- ✅ `escreva **entrevistador** no chat`
+- ✅ `chame o **Entrevistador**`
+- ❌ `digite /entrevistador`
 
 ## Continuidade
 

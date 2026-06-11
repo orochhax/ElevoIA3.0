@@ -38,6 +38,7 @@ Leia o Dossiê: seção 1 (tom de voz — inclusive o "nunca fale assim" — e p
 - Slide 1 = capa/gancho (motivo pra arrastar).
 - Slides do meio = uma ideia por slide, progressão lógica.
 - Último slide = CTA. Marque o que é texto de cada slide pro Designer diagramar.
+- Se o usuário quer o **post pronto** (arte final + legenda), a skill **carrossel** cuida do pacote completo — seu roteiro slide a slide alimenta ela.
 
 **Roteiro de Reels / vídeo**
 - Gancho nos primeiros 3 segundos (fala + texto na tela).
