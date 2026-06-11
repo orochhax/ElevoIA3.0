@@ -73,27 +73,19 @@ O **Maestro** sempre sabe o próximo passo. O **Dossiê** guarda o contexto entr
 - **[Claude Code](https://claude.com/claude-code)** instalado
 - **Git**
 
-### 1) Clone o projeto do novo cliente
+### Um passo só
 
-Copie e cole este comando (no terminal ou direto no chat do Claude Code):
+Crie uma pasta nova pro cliente (regra: **1 pasta = 1 cliente**), abra ela no VSCode e **cole isto no chat do Claude Code**:
 
-```bash
-git clone https://github.com/orochhax/ElevoIA3.0.git cliente-novo
+```
+Clone https://github.com/orochhax/ElevoIA3.0.git aqui nesta pasta (se ela não estiver vazia, clone numa pasta temporária e mova tudo pra cá, incluindo os arquivos ocultos como .claude e .gitignore). Depois leia o CLAUDE.md e inicie imediatamente a entrevista de descoberta seguindo .claude/skills/entrevistador/SKILL.md.
 ```
 
-> `cliente-novo` é só o nome da pasta — troque pelo nome do cliente (regra: **1 pasta = 1 cliente**).
+Pronto — o time clona o projeto, se prepara e **já começa a entrevista**, sem mais nenhum comando. O **Entrevistador** desliga o projeto do template automaticamente, faz as perguntas e monta o `dossie.md`. Quando a entrevista fecha, **o time segue sozinho** pelas etapas — Análise → Estratégia → Proposta → Conteúdo → Design → Site → Financeiro — parando só quando precisa de uma informação sua. Você pode interromper quando quiser.
+
+> Pelo terminal, se preferir: `git clone https://github.com/orochhax/ElevoIA3.0.git cliente-novo; cd cliente-novo; claude "entrevistador"`
 >
 > ⚠️ **Privacidade:** o `dossie.md` e as pastas de saída contêm dados do cliente. Não suba esse repositório para um local público; mantenha-o privado ou local.
-
-### 2) Abra a pasta e inicie a descoberta (o resto corre sozinho)
-
-Abra a pasta clonada no VSCode (ou rode `claude` dentro dela) e escreva no chat:
-
-```
-entrevistador
-```
-
-O **Entrevistador** prepara o repositório do cliente (desliga o projeto do template automaticamente), faz as perguntas e monta o `dossie.md`. Quando a entrevista fecha, **o time segue sozinho** pelas etapas seguintes — Análise → Estratégia → Proposta → Conteúdo → Design → Site → Financeiro — parando só quando precisa de uma informação sua. Você pode interromper quando quiser.
 
 > 💡 A qualquer momento, escreva `maestro` no chat pra ver um **painel de status**: o que já foi feito e qual é o próximo passo.
 
